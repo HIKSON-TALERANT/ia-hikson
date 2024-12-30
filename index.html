@@ -5,6 +5,33 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Chatbot - Start-up Ultratech</title>
   <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+  <style>
+    /* Centrer le chatbot et faire en sorte qu'il soit visible dès l'arrivée sur la page */
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f4f4f9; /* Couleur de fond douce */
+    }
+
+    h1 {
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+
+    df-messenger {
+      width: 100%;
+      max-width: 400px; /* Taille maximale du chatbot */
+      height: 500px; /* Hauteur du chatbot */
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+  </style>
 </head>
 <body>
   <h1>Welcome to Start-up Ultratech</h1>
